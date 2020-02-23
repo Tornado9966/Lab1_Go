@@ -8,6 +8,12 @@ import (
 
 
 func PostfixToInfix(text string) (string, error) {
+	regNum := regexp.MustCompile(`\s*[0-9]+\s*`)
+    regSymb := regexp.MustCompile(`\s*[+-/*^]+\s*`)
+	matched, _ := regexp.Match(`[0-9][+-/*^]|[+-/*^][0-9]|[+-/*^]{2,}|[^0-9+-/*^\s+]`, []byte(text))
+	if(matched ||len(regNum.FindAll([]byte(text), -1)) != len(regSymb.FindAll([]byte(text), -1)) + 1){
+		return "", errors.New("Incorrect expression")
+    }
 
     var stack []string
 	var s1 string
