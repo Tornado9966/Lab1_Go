@@ -16,11 +16,11 @@ func PostfixToInfix(text string) (string, error) {
     }
 
     var stack []string
-	var s1 string
-	var s2 string
-	var temp string
-	numCount := 0
-	opCount := 0
+    var s1 string
+    var s2 string
+    var temp string
+    numCount := 0
+    opCount := 0
     for _, tok := range strings.Fields(text) {
 		if (tok == "*" || tok == "/" || tok == "^" || tok == "+" || tok == "-") {
 			opCount++
