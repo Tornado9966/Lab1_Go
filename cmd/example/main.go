@@ -18,4 +18,6 @@ func main() {
 	}else {
 		fmt.Println("\nThe infix expression is ", res)
     }
+	
+	fmt.Println(buildVersion)
 }
