@@ -7,3 +7,9 @@
 **Мета:** Реалізація практики безперервної інтеграції
 
 _**Варіант 8.**_ Перетворити постфіксний вираз в інфіксний. Бібліотека для перевірок - gocheck.
+
+Посилання на [невдалу збірку]: https://travis-ci.com/Tornado9966/Lab1_Go/builds/150657440
+
+Посилання на [вдалу збірку]: https://travis-ci.com/Tornado9966/Lab1_Go/builds/150675561
+
+Посилання на [Pull Request]: https://travis-ci.com/Tornado9966/Lab1_Go/pull_requests
