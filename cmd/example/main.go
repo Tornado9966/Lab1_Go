@@ -2,9 +2,9 @@ package main
  
 import (
     "fmt"
-	"bufio"
-	"os"
-	lab1 "github.com/Tornado9966/Lab1_Go"
+    "bufio"
+    "os"
+    lab1 "github.com/Tornado9966/Lab1_Go"
 )
 
 
@@ -18,4 +18,6 @@ func main() {
 	}else {
 		fmt.Println("\nThe infix expression is ", res)
     }
+
+    fmt.Println(buildVersion)
 }
