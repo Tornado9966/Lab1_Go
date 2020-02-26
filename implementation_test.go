@@ -26,7 +26,7 @@ func (s * TestSuite) TestConversion(c *C) {
                              "(4 + 4) * 7",
                              "5"}
 						 
-	for i := 0; i < 5; i++ {
+	for i := 0; i < len(expressions); i++ {
 		res, err := PostfixToInfix(expressions[i])
 		if c.Check(err, IsNil) {
 			c.Assert(res, Equals, outcome[i])
@@ -45,7 +45,7 @@ func (s * TestSuite) TestConversion(c *C) {
                                        "4 4 + + 4",
                                        "4 5 + 5 &"}
 							 
-	for i := 0; i < 9; i++ {
+	for i := 0; i < len(false_expressions); i++ {
 		_, err := PostfixToInfix(false_expressions[i])
 		if c.Check(err, NotNil) {
 			c.Assert(err, ErrorMatches, "Incorrect expression")
