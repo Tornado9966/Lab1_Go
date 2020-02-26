@@ -9,5 +9,8 @@ test:
 	
 out/example: implementation.go cmd/example/main.go
 	mkdir -p out
-	echo package main > cmd/example/buildVersion.go & FOR /F %a in ('git describe') do echo var buildVersion = "%a" >> cmd/example/buildVersion.go
+	echo package main > cmd/example/buildVersion.go
+	echo -n "var buildVersion = \"" >> cmd/example/buildVersion.go
+	echo -n "`git describe`" >> cmd/example/buildVersion.go
+	echo "\"" >> cmd/example/buildVersion.go
 	go build -o out/example ./cmd/example
