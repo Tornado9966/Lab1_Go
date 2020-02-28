@@ -1,1 +1,8 @@
 language: go
+
+install:
+  - git fetch --tags
+
+script:
+  - make test
+  - make
