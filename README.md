@@ -10,6 +10,6 @@ _**Варіант 8.**_ Перетворити постфіксний вираз
 
 Посилання на [невдалу збірку](https://travis-ci.com/Tornado9966/Lab1_Go/builds/150657440)
 
-Посилання на [вдалу збірку](https://travis-ci.com/Tornado9966/Lab1_Go/builds/150675561)
+Посилання на [вдалу збірку](https://travis-ci.com/Tornado9966/Lab1_Go/builds/150984006)
 
 Посилання на [Pull Request](https://travis-ci.com/Tornado9966/Lab1_Go/pull_requests)
